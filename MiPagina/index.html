@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="css/estilo2.css" />
+        <script type="text/javascript" src="js/script1.js"></script>  
         <title>Page Title</title>
     </head>
     <body>
@@ -27,13 +28,15 @@
         <form>
             <label for="fname">¿Qué platillo prefieres?:</label><br>
             <input type="text" id="fname" name="fname"><br>
-            <input type="checkbox" id="vehicle1" name="tipo1" value="asado">
+            <input type="checkbox" id="asado" name="tipo1" value="asado">
             <label for="tipo1">Asado</label><br>
-            <input type="checkbox" id="vehicle2" name="tipo2" value="carbon">
+            <input type="checkbox" id="carbon" name="tipo2" value="carbon">
             <label for="tipo2">Al carbon</label><br>
-            <input type="checkbox" id="vehicle3" name="tipo3" value="crudo">
+            <input type="checkbox" id="crudo" name="tipo3" value="crudo">
             <label for="tipo3">Crudo</label>
         </form>
+
+        <button type="button" onclick="saveAnswers()">Enviar respuestas</button>
 
     </body>
 </html>
